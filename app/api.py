@@ -21,7 +21,7 @@ total=sum(list_of_numbers)
 class add(Resource):
             #   HTTP GET method.    (REST)
 	  def get(self):
-	      return f""total, {escape(total)}!"
+	      return f"total, {escape(total)}!"
 	
 # Associating class 'add' with the route '/total'
 api.add_resource(add, "/total")
