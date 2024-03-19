@@ -13,7 +13,7 @@ cat ~/.ssh/id_rsa.pub
 # Cloning the source code
 git clone https://github.com/jsdads11/addnumbers-docker.git
 cd addnumbers-docker
-# Building and running as a ocker container
+# Building and running as a Docker container
 docker build --tag addnumbers-docker --build-arg FLASK_DEBUG=True .
 docker run --detach --name my-addnumbers-app --publish 80:8080 --rm addnumbers-docker
 docker ps
