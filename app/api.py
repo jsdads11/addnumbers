@@ -19,7 +19,7 @@ total=sum(list_of_numbers)
 # add class inherits the Resource class to specify Route associated with it
 
 class add(Resource):
-            #   HTTP GET method.    (REST)
+            #   HTTP GET method    (REST)
 	  def get(self):
 	      return f"total, {escape(total)}!"
 	

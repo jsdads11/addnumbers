@@ -13,7 +13,7 @@ ENV FLASK_APP=$WORKDIR/run.py \
     PORT=8080 \
     PYTHONUNBUFFERED=True
 
-# App's file system
+# Api App's file system
 WORKDIR $WORKDIR
 RUN chown $USER:$GROUP $WORKDIR
 COPY --chown=$USER:$GROUP app/ $WORKDIR

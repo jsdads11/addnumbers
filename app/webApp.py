@@ -33,4 +33,3 @@ def ConsumeApi():
 
 # Calling method to Hit the url and get response
 ConsumeApi()
-
